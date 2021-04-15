@@ -209,13 +209,11 @@ body{
   padding-left: 42px;
   }
 
-.modal-label:focus-within .modal-input-icon,
-.modal-label:hover .modal-input-icon{
+.modal-label:focus-within .modal-input-icon{
   fill: var(--accent-color);
 }
 
-.modal-label:focus-within .modal-input,
-.modal-label:hover .modal-input{
+.modal-label:focus-within .modal-input{
   border-color:var(--accent-color);
 }
 
@@ -253,7 +251,7 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 200px;
   height: 50px;
 
@@ -434,6 +432,18 @@ header.section{padding: 0;}
 .user-mail-input{
   background-color: transparent;
   border-width: 0;
+  color:var(--addres-second-color);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  
+}
+
+.user-mail-input::placeholder{
+  color:var(--addres-second-color);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
 .user-mail-input-container{
