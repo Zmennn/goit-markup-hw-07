@@ -12,6 +12,7 @@
     --overlay-color:rgba(33, 150, 243, 0.9);
     --time-duration: 250ms;
     --transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    --input-heigth:40px;
 }  
  
 /* reset styles */
@@ -192,8 +193,9 @@ body{
 
   transition-property: fill;
   position: absolute;
-  left: 13px;
-  top: 29px;
+  left: 12px;
+  bottom: calc(var(--input-heigth) / 2);
+  transform: translateY(50%);
   fill: var(--primari-title-color);
 }
 
@@ -203,7 +205,7 @@ body{
   transition-property: border-color ;
   outline: none;
   width: 448px;
-  height: 40px;
+  height: var(--input-heigth);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
@@ -235,7 +237,7 @@ body{
 }
 
 .check-box-text{
-  margin-left: 8px;
+  margin-left: 24px;
 }
 .check-box-link{
   color: var(--accent-color);
@@ -244,9 +246,49 @@ body{
 .checkbox-container{
   display: flex;
   align-items: center;
-  margin-top: 15px;
   justify-content: center;
+  margin-top: 15px;
+  }
+
+.check-box-label{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
 }
+
+.check-box-input{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+.check-box-icon{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/check1.svg);
+  fill: currentColor;
+  
+}
+
+.check-box-input:checked ~ .check-box-icon{
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/check2.svg);
+}
+
 .modal .hero-button{
   display: block;
   margin-left: auto;
@@ -737,21 +779,21 @@ height: 90px;
 /*gallery */
 .gallery h2{
 
- color: var(--primari-title-color);
- font-size: 18px;
- line-height: 2;
- letter-spacing: 0.06em;
- padding-bottom: 4px;}
+  color: var(--primari-title-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;}
 
 .gallery-border p{
- font-size: 16px;
- line-height: 1.87;
- letter-spacing: 0.03em;
- color: var(--primary-text-color);}
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);}
 
 .gallery-border{
- border: 1px solid #EEEEEE;
- padding:20px 24px;}
+  border: 1px solid #EEEEEE;
+  padding:20px 24px;}
 
 .gallery-link:hover,.gallery-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
