@@ -289,7 +289,7 @@ body{
   background-image: url(../images/check2.svg);
 }
 
-.modal .hero-button{
+.modal .button{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -551,7 +551,7 @@ body{
   margin-right: auto;
 }
 
-.main-title{
+.hero__title{
   color: var(--primery-bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -561,13 +561,13 @@ body{
   margin-bottom: 30px;
 }
 
-.hero-container{
+.hero__container{
  width: 696px;
  margin-left: auto;
  margin-right: auto;
  text-align: center;}
 
-.hero-button{
+.button{
  background-color: var(--accent-color);
  color: var(--primery-bg-color) ;
  cursor: pointer;
@@ -580,7 +580,7 @@ body{
  border-radius: 4px;
  border:0px;}
 
-.hero-button:focus,.hero-button:hover{background-color:  #188CE8;}
+.button:focus,.button:hover{background-color:  #188CE8;}
 
 
 /*    our-features */
@@ -835,7 +835,7 @@ height: 90px;
 
 /* transitions */
 
-.nav__link,.contacts__link,.hero-button,
+.nav__link,.contacts__link,.button,
 .social-link,.regular-customers-icon-container
 ,.footer-link,.portfolio-overlay,.portfolio-button,.gallery-link
 ,.button-off,.backdrop,.user-mail-submit-button,.modal-input,.modal-input-icon{
@@ -848,7 +848,7 @@ height: 90px;
   transition-property: color;
 }
 
-.hero-button,.footer .social-link,.user-mail-submit-button{
+.button,.footer .social-link,.user-mail-submit-button{
   transition-property:background-color;
 }
 
