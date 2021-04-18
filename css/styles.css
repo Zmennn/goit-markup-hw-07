@@ -91,7 +91,7 @@ body{
   padding-top: 25px;
   padding-bottom: 24px;}
 
-.logo-studio-black{
+.logo__text--black{
   color: var(--second-logo-color);}
 
 .logo-studio-white{
@@ -312,7 +312,7 @@ body{
 }
 
 /* header */
-.list-items .nav-link{
+.nav__link{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -322,11 +322,11 @@ body{
   
 }
 
-.list-items .nav-link.current{
+.nav__link--current{
   position: relative;
   color: var(--accent-color);}
 
- .nav-link.current::after{
+.nav__link--current::after{
    position: absolute;
   left: 0;
   bottom: -1px;
@@ -338,11 +338,11 @@ body{
   border-radius: 2px;
 } 
 
-.nav-link:hover,.nav-link:focus{
+.nav__link:hover,.nav__link:focus{
   color: var(--accent-color) ;
 }
 
-.list-items .contacts-head{
+.contacts__link{
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -351,17 +351,17 @@ body{
 }
 
 
-.contacts-head:hover,.contacts-head:focus{
+.contacts__link:hover,.contacts__link:focus{
   fill:var(--accent-color) ;
   color: var(--accent-color);
 }
 
-.nav-link{  
+.nav__link{  
 display: block;
 }
 
 
-.nav-link,.contacts-head{
+.nav__link,.contacts__link{
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
@@ -377,22 +377,26 @@ display: block;
   margin-left: auto;
 }
 
-header.section{padding: 0;}
 
-.header-container{align-items:center;display: flex;}
+.header__container{align-items:center;display: flex;}
 
-.nav-list li:not(:last-child),.contacts li:not(:last-child){
+.nav__item:not(:last-child){
   margin-right: 50px;}
 
-.nav-list{margin-left: 94px;}
+.contacts li:not(:last-child){
+  margin-right: 50px;}
+
+.nav__list{
+  margin-left: 94px;
+  display: flex;}
 
 .contacts{margin-left: auto}
 
-.nav-list,.contacts{display: flex;}
+.contacts{display: flex;}
 
 
 
-.head-icon{
+.contacts__icon{
   fill: currentColor;
   margin-right: 10px;
 }
@@ -836,7 +840,7 @@ height: 90px;
 
 /* transitions */
 
-.nav-link,.contacts-head,.hero-button,
+.nav__link,.contacts__link,.hero-button,
 .social-link,.regular-customers-icon-container
 ,.footer-link,.portfolio-overlay,.portfolio-button,.gallery-link
 ,.button-off,.backdrop,.user-mail-submit-button,.modal-input,.modal-input-icon{
@@ -845,7 +849,7 @@ height: 90px;
 }
 
 
-.nav-link,.contacts-head,.footer-link{
+.nav__link,.contacts__link,.footer-link{
   transition-property: color;
 }
 
