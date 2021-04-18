@@ -716,7 +716,7 @@ body{
 }
 
  /* regular customers */
-.regular-customers h2{
+.regular-customers__title{
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -728,14 +728,12 @@ body{
   margin-bottom: 50px;
 }
 
-.regular-customers .grid-items{
+.regular-customers__item{
 --grid-item:6;
-}
-
-.regular-customers li{
 height: 90px;
 }
-.regular-customers-icon-container{
+
+.regular-customers__link{
   height: 100%;
   width: 100%;
   display: flex;
@@ -746,11 +744,15 @@ height: 90px;
   border-radius: 4px;
 }
 
-.regular-customers-icon{fill: currentColor;}
+.regular-customers__icon{
+  fill: currentColor;
+}
  
-.regular-customers-icon-container:focus,.regular-customers-icon-container:hover{
+.regular-customers__link:focus,
+.regular-customers__link:hover{
   color: var(--accent-color);
-  border-color:var(--accent-color);}
+  border-color:var(--accent-color);
+}
 
 
 /* main pg portfolio */
@@ -839,7 +841,7 @@ height: 90px;
 /* transitions */
 
 .nav__link,.contacts__link,.button,
-.social-list__link,.regular-customers-icon-container
+.social-list__link,.regular-customers__link
 ,.footer-link,.portfolio-overlay,.portfolio-button,.gallery-link
 ,.button-off,.backdrop,.user-mail-submit-button,.modal-input,.modal-input-icon{
   transition-duration: var(--time-duration);
@@ -855,7 +857,7 @@ height: 90px;
   transition-property:background-color;
 }
 
-.regular-customers-icon-container{
+.regular-customers__link{
   transition-property: border-color, color;
 }
 
