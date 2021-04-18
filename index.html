@@ -368,27 +368,28 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container-links">
-                <div class="footer-container-left">
-                    <a class="logo" href="./index.html">Web<span class="logo-studio-white">Studio</span></a>
+            <div class="footer__container-links">
+                <div>
+                    <a class="logo" href="./index.html">Web<span class="logo__text--white">Studio</span></a>
                     <address class="address">
-                        <ul class="list footer-list">
-                            <li class="town">г. Киев, пр-т Леси Украинки, 26</li>
-                            <li class="footer-item"><a class="footer-link"
+                        <ul class="list address__list">
+                            <li class="address__town">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="address__item"><a class="address__link"
                                     href="mailtoinfo@example.com">info@example.com</a>
                             </li>
-                            <li class="footer-item"><a class="footer-link" href="tel+380991111111">+38 099 111 11 11</a>
+                            <li class="address__item"><a class="address__link" href="tel+380991111111">+38 099 111 11
+                                    11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="head-icon-container">
-                    <p class="footer-text">присоединяйтесь</p>
+                <div class="footer__container-social">
+                    <p class="footer__text">присоединяйтесь</p>
                     <ul class="social-list list">
                         <li class="social-list__item">
                             <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
                                 aria-label="инстаграмм">
-                                <svg class="social-list__icon">
+                                <svg class="social-list__icon social-list__icon--footer">
                                     <use href="./images/icons.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
@@ -396,7 +397,7 @@
                         <li class="social-list__item">
                             <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
                                 aria-label="твиттер">
-                                <svg class="social-list__icon">
+                                <svg class="social-list__icon social-list__icon--footer">
                                     <use href="./images/icons.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
@@ -404,7 +405,7 @@
                         <li class="social-list__item">
                             <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
                                 aria-label="фейсбук">
-                                <svg class="social-list__icon">
+                                <svg class="social-list__icon social-list__icon--footer">
                                     <use href="./images/icons.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
@@ -412,7 +413,7 @@
                         <li class="social-list__item">
                             <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
                                 aria-label="линкедин">
-                                <svg class="social-list__icon">
+                                <svg class="social-list__icon social-list__icon--footer">
                                     <use href="./images/icons.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
@@ -420,15 +421,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-container-form">
-                <p class="footer-form-text">Подпишитесь на рассылку</p>
-                <form>
-                    <label class="user-mail-input-container">
-                        <input required class="user-mail-input" placeholder="E-mail" type="email"
-                            name="user-mail-footer" id="user-mail">
+            <div class="footer__container-form">
+                <p class="footer__form-text">Подпишитесь на рассылку</p>
+                <form class="footer__form">
+                    <label class="footer__label">
+                        <input required class="footer__input" placeholder="E-mail" type="email" name="user-mail-footer"
+                            id="user-mail">
                     </label>
-                    <button type="submit" class="user-mail-submit-button">Подписаться
-                        <svg class="user-mail-submit-icon" width="24" height="24">
+                    <button type="submit" class="footer__button">Подписаться
+                        <svg class="footer__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
