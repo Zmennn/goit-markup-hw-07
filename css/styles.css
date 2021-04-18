@@ -319,7 +319,6 @@ body{
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primari-title-color);
-  
 }
 
 .nav__link--current{
@@ -356,10 +355,6 @@ body{
   color: var(--accent-color);
 }
 
-.nav__link{  
-display: block;
-}
-
 
 .nav__link,.contacts__link{
  font-weight: 500;
@@ -383,7 +378,7 @@ display: block;
 .nav__item:not(:last-child){
   margin-right: 50px;}
 
-.contacts li:not(:last-child){
+.contacts__item:not(:last-child){
   margin-right: 50px;}
 
 .nav__list{
