@@ -7,7 +7,15 @@
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1) rotate(0deg);
   opacity: 1;
-  transition-property: transform;
+  transition-property: opacity, visibility, transform;
+  transition-delay: $time-duration, $time-duration, 250ms;
+  transition-duration: 250ms, 250ms, 0;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: scale(0) rotate(180deg);
 }
 .modal {
   position: absolute;
@@ -163,13 +171,4 @@
 }
 .modal__button {
   margin-top: 30px;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: scale(0) rotate(180deg);
-  transition-property: opacity, visibility, transform;
-  transition-delay: $time-duration, $time-duration, 0ms;
-  transition-duration: 1ms, 1ms, $time-duration;
 }

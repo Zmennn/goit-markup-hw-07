@@ -231,10 +231,22 @@ body {
   -webkit-transform: scale(1) rotate(0deg);
           transform: scale(1) rotate(0deg);
   opacity: 1;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+  -webkit-transition-property: opacity, visibility, -webkit-transform;
+  transition-property: opacity, visibility, -webkit-transform;
+  transition-property: opacity, visibility, transform;
+  transition-property: opacity, visibility, transform, -webkit-transform;
+  -webkit-transition-delay: 250ms, 250ms, 250ms;
+          transition-delay: 250ms, 250ms, 250ms;
+  -webkit-transition-duration: 250ms, 250ms, 0;
+          transition-duration: 250ms, 250ms, 0;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  -webkit-transform: scale(0) rotate(180deg);
+          transform: scale(0) rotate(180deg);
 }
 
 .modal {
@@ -453,22 +465,6 @@ body {
 
 .modal__button {
   margin-top: 30px;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  -webkit-transform: scale(0) rotate(180deg);
-          transform: scale(0) rotate(180deg);
-  -webkit-transition-property: opacity, visibility, -webkit-transform;
-  transition-property: opacity, visibility, -webkit-transform;
-  transition-property: opacity, visibility, transform;
-  transition-property: opacity, visibility, transform, -webkit-transform;
-  -webkit-transition-delay: 250ms, 250ms, 0ms;
-          transition-delay: 250ms, 250ms, 0ms;
-  -webkit-transition-duration: 1ms, 1ms, 250ms;
-          transition-duration: 1ms, 1ms, 250ms;
 }
 
 .nav__link {
@@ -1008,5 +1004,63 @@ body {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   display: block;
+}
+
+.nav__link,
+.contacts__link,
+.button,
+.social-list__link,
+.regular-customers__link,
+.address__link,
+.gallery__overlay,
+.button2,
+.gallery__link,
+.modal__off,
+.backdrop,
+.footer__button,
+.modal__input,
+.modal__input-icon {
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link,
+.contacts__link,
+.address__link {
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.button,
+.footer .social-list__link,
+.footer__button {
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+}
+
+.regular-customers__link {
+  -webkit-transition-property: border-color, color;
+  transition-property: border-color, color;
+}
+
+.button2 {
+  -webkit-transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: background-color, color, -webkit-box-shadow;
+  transition-property: box-shadow, background-color, color;
+  transition-property: box-shadow, background-color, color, -webkit-box-shadow;
+}
+
+.gallery__link {
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.team .social-list__link {
+  -webkit-transition-property: background-color, fill;
+  transition-property: background-color, fill;
 }
 /*# sourceMappingURL=main.css.map */
