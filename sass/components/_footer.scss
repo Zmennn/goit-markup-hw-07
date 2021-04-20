@@ -73,12 +73,7 @@
   text-transform: uppercase;
   color: $primery-bg-color;
 }
-.user-mail-label {
-  font-size: 16px;
-  line-height: 1.25px;
-  letter-spacing: 0.03em;
-  color: $addres-second-color;
-}
+
 .footer__input {
   cursor: pointer;
   background-color: transparent;
@@ -114,6 +109,6 @@
 .footer__icon {
   margin-left: 10px;
 }
-.footer .footer__button {
+.footer__button {
   margin-right: 0;
 }
