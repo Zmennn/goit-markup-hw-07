@@ -752,8 +752,6 @@ body {
 
 /* regular customers */
 .regular-customers__title {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -791,7 +789,7 @@ body {
 
 /* main pg portfolio */
 
-/*     buttons */
+/*   portfolio  buttons */
 .button2 {
   background-color: var(--second-bg-color);
   color: var(--primari-title-color);
