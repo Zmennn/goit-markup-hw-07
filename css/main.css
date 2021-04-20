@@ -751,7 +751,7 @@ body {
   margin-left: 10px;
 }
 
-.footer .footer__button {
+.footer__button {
   margin-right: 0;
 }
 
@@ -886,7 +886,7 @@ body {
   --grid-item: 4;
 }
 
-.team--container {
+.team__container {
   padding-bottom: 23px;
   padding-top: 30px;
   padding-left: 20px;
