@@ -1,6 +1,7 @@
-body{
-    background-color: aqua;
-}
-@import "./utils/_variables.scss"
-// @import "./utils/_globalStyle.scss"
-// @import "./components/_logo.scss"
+@import './utils/_variables.scss';
+@import './utils/_globalStyle.scss';
+@import './components/_logo.scss';
+@import './components/button';
+@import './components/modal';
+@import './components/header';
+@import './components/footer';
