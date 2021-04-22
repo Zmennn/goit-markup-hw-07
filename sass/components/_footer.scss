@@ -49,21 +49,20 @@
 .social-list__icon--footer {
   fill: $primery-bg-color;
 }
+.footer__box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer__container-address,
 .footer__container-social {
-  margin-left: 70px;
-  padding-top: 15px;
+  flex-basis: calc((50% - 45px) / 2);
 }
-.footer .container {
-  display: flex;
-}
-
-.footer__container-links {
-  display: flex;
+.social-list--footer {
+  justify-content: start;
 }
 .footer__container-form {
   flex-basis: calc((100% - 30px) / 2);
-  margin-left: auto;
-  padding-top: 12px;
 }
 .footer__form-text {
   font-weight: 700;
@@ -73,7 +72,6 @@
   text-transform: uppercase;
   color: $primery-bg-color;
 }
-
 .footer__input {
   cursor: pointer;
   background-color: transparent;
